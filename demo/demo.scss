@@ -1,0 +1,105 @@
+; // For some reason, Dart Sass will not compile without this. Investigate further. 
+
+/**
+ * Reset some basic elements
+ */
+ blockquote,
+ body,
+ dd,
+ dl,
+ figure,
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6,
+ hr,
+ ol,
+ p,
+ pre,
+ ul {
+   margin: 0;
+   padding: 0;
+ }
+ 
+ /**
+  * 1. Remove repeating backgrounds in all browsers (opinionated).
+  * 2. Add box sizing inheritence in all browsers (opinionated).
+  */
+ 
+ *,
+ ::before,
+ ::after {
+   background-repeat: no-repeat; /* 1 */
+   box-sizing: inherit; /* 2 */
+ }
+ 
+ /**
+  * 1. Add text decoration inheritance in all browsers (opinionated).
+  * 2. Add vertical alignment inheritence in all browsers (opinionated).
+  */
+ 
+ ::before,
+ ::after {
+   text-decoration: inherit; /* 1 */
+   vertical-align: inherit; /* 2 */
+ }
+ 
+ /**
+  * 1. Add border box sizing in all browsers (opinionated).
+  * 2. Add the default cursor in all browsers (opinionated).
+  * 3. Add a flattened line height in all browsers (opinionated).
+  * 4. Prevent font size adjustments after orientation changes in IE and iOS.
+  */
+ 
+ html {
+   box-sizing: border-box; /* 1 */
+   cursor: default; /* 2 */
+   font-family: sans-serif; /* 3 */
+   line-height: 1.5; /* 3 */
+   -ms-text-size-adjust: 100%; /* 4 */
+   -webkit-text-size-adjust: 100%; /* 5 */
+ }
+
+p {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.animation-demo-yay {
+
+  transition: transform 300ms ease-in-out;
+
+  &.animation__hello__step-1 {
+    transform: translate3d(0, 150px, 0);
+  }
+  &.animation__hello__step-2 {
+    transform: translate3d(0, -100px, 0);
+  }
+}
+
+.debug-container {
+  table {
+    width: 100%;
+  }
+
+  .level__step {
+    .cell__name span {
+      padding-left: 20px;
+    }
+    
+  }
+
+  .level__frame {
+    .cell__name span {
+      padding-left: 40px;
+    }
+  }
+
+  .type__series {
+    background: #6BC99A;
+  }
+  .type__step {
+    background: #75C4C9;
+  }
+}

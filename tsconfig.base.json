@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "Default",
+  "compilerOptions": {
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "target": "es2015",
+    "sourceMap": true,
+    "strict": true,
+    "pretty": true
+  },
+  "exclude": ["node_modules"]
+}
