@@ -73,7 +73,7 @@ Step 2's class:
 When the series is finished, all remaining classes added will be removed.
 
 ## TypeScript
-This package is written in typescript and should be compatable out-of-the-box.
+This package is written in typescript and should be compatible out-of-the-box.
 
 However, to get access to the types and interfaces included in this package directly:
 (just in case. It's an edge case, but who knows?)
