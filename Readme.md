@@ -106,20 +106,6 @@ The `animationSeries` function takes an object as its argument.
 
 ## Hooks
 
-### Hook Order
-
-1. **Series** - `before`
-2. **Series** - `beforeEachFrame`
-3. **Step** - `beforeEachFrame`
-4. **Series** - `beforeEachStep`
-5. **Step** - `before`
-6. **Series** - `duringEachStep`
-7. **Step** - `during`
-8. **Series** - `afterEachFrame`
-9. **Step** - `
-10. **Series**
-
-
 ### Series Hooks (object)
 
 These hooks apply to the entire series. Use Step Hooks to hook into individual steps in the animation series.
@@ -162,7 +148,7 @@ All hook functions are passed an object as a single param.
 
 The String defaults used in the css class name generation can be overwritten with the `updateConfig` function. 
 
-***Warning*:** This is **NOT** a function by function basis, and will update values that all uses of this function will use. There may be a future update where each function can be individually configered if there is enough need for it.
+***Warning*:** This is **NOT** a function by function basis, and will update values that all uses of this function will use. There may be a future update where each function can be individually configured if there is enough need for it.
 
 The current config object has two keys. 
 
