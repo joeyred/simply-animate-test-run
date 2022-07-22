@@ -1,5 +1,5 @@
 {
-  "name": "simply-animate",
+  "name": "simply-animate-test",
   "version": "1.0.0",
   "description": "A simple multi-step animation utility with all kinds of hooks for the simpliest to the most complex needs in a small footprint",
   "repository": {
@@ -19,11 +19,11 @@
     "test:coverage": "jest --collectCoverage",
     "lint": "eslint --ext .js,.ts src/",
     "clean:dist": "rm -rf dist",
-    "prepublishOnly": "npm run test:build",
+    "prepublishOnly": "npm run lint && npm run test && npm run build:tsc",
     "docs:json": "node ./scripts/typedoc.js",
     "docs:td": "typedoc --json ./docs/data.json ./src/simply-animate.ts",
     "demo:dev": "webpack serve --config ./demo/webpack.config.js --mode development",
-    "release": "npm run build:tsc &&",
+    "release": "pnpm build:tsc && changeset publish",
     "prepare": "husky install"
   },
   "keywords": [
